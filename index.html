@@ -9,7 +9,10 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    
+   
 </head>
 <body background="imagenes/fondoP5.png">
 <header class="header">
@@ -18,9 +21,9 @@
 <span class="menu-icon">Ver menu</span>
 <nav class="navigation">
     <ul>
-    <li ><a href="Inicio.html">INICIO</a></li>
-    <li ><a href="#" >HACERCA DE</a></li>
+    <li ><a href="index.html">INICIO</a></li>
     <li ><a href="#" id="btn-abrir-popup" class="btn-abrir-popup">REGISTRATE </a></li>
+    <li ><a href="javascript: abrir()" >HACERCA DE</a></li>
     </ul>
 </nav>
  </div>   
@@ -131,7 +134,23 @@
     &#169 Educacion online 2020
     </div>
 </body>
-
+<body>
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>INICIO DE SESION</h3>
+        <h4><font color="white">registrate o inicia sesion</h4></font>
+        <form action="">
+            <div class="contenedor-inputs">
+                <input type="text" placeholder="Nombre">
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <input type="submit" class="btn-submit" value="Registrate">
+            <input type="submit" class="btn-submit" value="inicia sesion">
+        </form>
+    </div>
+</div>
+</div>
 <div class="overlay" id="overlay">
     <div class="popup" id="popup">
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
@@ -149,9 +168,19 @@
 </div>
 </div>
 
+</body>
+<body>
+    
+<script src="js/popup.js"></script>
+
+<div class="ventana" id="vent">
+    <div id="cerrar"><a href="javascript: cerrar()"><img src="imagenes/senales.png"></a></div>
+<h2>SOMOS LA MEJOR OPCION PARA ESTUDIAR</h2>
+<h3>Nuestro objetivo es ayudar a los estudiantes a reforzar sus conocimientos y obtener buenas calificaciones en sus materias</h3>
+<h2><img src="imagenes/fondoP2.jpg" width="600" height="300" alt=""></h2>
 </div>
 
-<script src="js/popup.js"></script>
+</section>  
+<script src="js/ventana.js"></script>
 </body>
-
 </html>
